@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - አሰፋ ቢንጎ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1 class="amharic-text">የጨዋታ አስተዳደር</h1>
+        
+        <div class="admin-panels">
+            <div class="admin-panel">
+                <h2 class="amharic-text">ክፍሎች</h2>
+                <div id="roomsList"></div>
+                <button onclick="createRoom()" class="control-btn btn-success amharic-text">አዲስ ክፍል ፍጠር</button>
+            </div>
+            
+            <div class="admin-panel">
+                <h2 class="amharic-text">ተጫዋቾች</h2>
+                <div id="allPlayers"></div>
+            </div>
+            
+            <div class="admin-panel">
+                <h2 class="amharic-text">የጨዋታ ቁጥጥር</h2>
+                <div class="game-controls">
+                    <button onclick="startGameForAll()" class="control-btn btn-success amharic-text">ጨዋታ ጀምር</button>
+                    <button onclick="callNumber()" class="control-btn btn-info amharic-text">ቁጥር ጥራ</button>
+                    <button onclick="resetGame()" class="control-btn btn-danger amharic-text">እንደገና ጀምር</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="admin.js"></script>
+</body>
+</html>

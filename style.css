@@ -1,0 +1,51 @@
+/* Add these styles to your existing CSS */
+
+.connection-status {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #28a745;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    z-index: 1000;
+    display: flex;
+    gap: 15px;
+    border: 1px solid #ffd700;
+}
+
+.connection-status.connected {
+    color: #28a745;
+}
+
+.connection-status.disconnected {
+    color: #dc3545;
+}
+
+.room-info {
+    font-size: 12px;
+    color: #ffd700;
+    margin-top: 3px;
+    text-align: center;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .connection-status {
+        font-size: 10px;
+        padding: 3px 10px;
+        gap: 8px;
+    }
+}
