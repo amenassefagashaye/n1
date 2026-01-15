@@ -28,7 +28,7 @@ class BingoClient {
 
     connect() {
         // Replace with your Deno Deploy URL
-        const wsUrl = 'wss://your-app.deno.dev';
+        const wsUrl = 'wss://https://ameng-gogs-n2-28.deno.dev/';
         // For local testing: 'ws://localhost:8080'
         
         try {
@@ -431,4 +431,5 @@ function showPotentialWin() {
 let bingoClient;
 window.addEventListener('DOMContentLoaded', () => {
     bingoClient = new BingoClient();
+
 });
